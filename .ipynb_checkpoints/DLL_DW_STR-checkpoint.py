@@ -30,22 +30,16 @@ CREATE TABLE IF NOT EXISTS d_usuarios (
 );
 
 CREATE TABLE IF NOT EXISTS d_fechas (
-    id_fecha INT AUTO_INCREMENT PRIMARY KEY,
-    full_date DATE NOT NULL,
-    day_of_week INT NOT NULL,
-    day_num_in_month INT NOT NULL,
-    day_name VARCHAR(15) NOT NULL,
-    day_abbrev VARCHAR(10) NOT NULL,
-    month TINYINT,
-    month_name VARCHAR(10) NOT NULL,
-    month_abbrev VARCHAR(10) NOT NULL,
-    quarter TINYINT NOT NULL,
-    year INT NOT NULL,
-    yearmo INT NOT NULL,
-    fiscal_month TINYINT NOT NULL,
-    fiscal_quarter TINYINT NOT NULL,
-    fiscal_year INT NOT NULL
+  `id_fecha` int NOT NULL AUTO_INCREMENT,
+  `full_date` date NOT NULL,
+  `day_of_week` int NOT NULL,
+  `month` tinyint DEFAULT NULL,
+  `quarter` tinyint NOT NULL,
+  `year` int NOT NULL,
+  `day` int DEFAULT NULL,
+  PRIMARY KEY (`id_fecha`)
 );
+
 CREATE TABLE IF NOT EXISTS h_ventas_ingresos (
     id_venta INT AUTO_INCREMENT PRIMARY KEY,
     id_cliente INT NOT NULL,

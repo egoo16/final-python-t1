@@ -1,1 +1,8 @@
 # final-python-t1
+
+# PROYECTO FINAL
+# INTEGRANTES 
+___________________________________________
+- EDGAR GEOVANY OCAÑA OROZCO 
+- JOSE CARLOS OBREGON CASTAÑEDA 
+- JESSICA MARISOL CASTELLANOS MARTÍNEZ
